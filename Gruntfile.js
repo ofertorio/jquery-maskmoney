@@ -72,4 +72,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask("test", ["jshint", "qunit"]);
     grunt.registerTask("default", ["jshint", "qunit", "concat", "uglify", "jquerymanifest"]);
+    grunt.registerTask("build", ["concat", "uglify", "jquerymanifest"])
 };
